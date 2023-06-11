@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ecological Footprint - Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.text {
+    text-align: justify;
+}
+.imagem-com-efeito {
+      transition: box-shadow 0.3s, border 0.3s; /* Transição suave do efeito */
+    }
+    
+    .imagem-com-efeito:hover {
+      border: 2px solid green; /* Adiciona uma borda vermelha de 2 pixels */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra preta com desfoque */
+    }
+    .container{
+      display:flex;
+    }
+
+    .iframe-container {
+      flex: 1;
+      height: 400px;
+      border: 3px solid green;
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+</style>
+</head>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button  w3-hover-green"> Ecological Footprint - Project</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-hover-green">Sustainability</a>
+      <a href="#menu" class="w3-bar-item w3-button w3-hover-green">At School</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-green">Reduce</a>
+      <a href="#finalthoughts" class="w3-bar-item w3-button w3-hover-green">Final Thoughts</a>
+      <a href="https://lasalle.edu.br/saopaulo" class="w3-bar-item w3-button w3-hover-green">La Salle</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header id="home">
+    <div>
+      <img class="slide w3-animate-opacity" src="image-removebg-preview (6).png" alt="Imagem 1" style="width:100%">
+      
+      <img class="slide w3-animate-opacity" src="image-removebg-preview (7).png" alt="Imagem 2" style="width:100%">
+      <!-- Adicione mais imagens conforme necessário -->
+  </header>
+
+<script>
+var index = 0;
+carousel();
+function carousel() {
+var i;
+var x = document.getElementsByClassName("slide");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+index++;
+if (index > x.length) { index = 1 }
+x[index - 1].style.display = "block";
+setTimeout(carousel, 3500); //Imagem é trocada a cada 2 segundos
+}
+</script>
+</script>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="pegadaecologica.jpeg" class="w3-round w3-image imagem-com-efeito" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center w3-hover-green">Sustainability</h1><br>
+      <p class="w3-large text">Sustainability consists of meeting the needs of current generations without compromising the needs of future generations, while ensuring a balance between economic growth, respect for the environment, and well-being. There are several concepts related to sustainability, such as sustained growth, which is a constant and safe increase in the economy, and sustainable management, which is managing an organization valuing all the factors that encompass it, and is essentially linked to the environment.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center w3-hover-green">At School</h1><br>
+      <h4>To reduce the ecological footprint<br>in the school, we can:</h4>
+      <p class="w3-text-grey">º Install selective collection bins: In selective collection, garbage is separated according to the material it is made of: plastic, glass, metal, paper, or organic materials.</p>
+      <hr>
+      <p class="w3-text-grey">º Create community gardens: Through cultivation, planting, and maintenance of the vegetable garden, the school develops in students a feeling of care and protection for nature.</p>
+      <hr>
+      <p class="w3-text-grey">º Reuse and exchange books: A great way to encourage the habit of reading, the dynamic helps students understand the importance of taking care of the material so that it can be enjoyed by other people!</p>
+      <hr>
+      <p class="w3-text-grey">º Encourage recycling and reuse of materials: The school can encourage students to give a new meaning to materials that would otherwise be discarded in nature.</p>
+      <hr>
+      <p class="w3-text-grey">º Create discussion groups on sustainability: To awaken students' autonomy, teachers can propose group debates on issues related to environmental awareness.</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="image-removebg-preview (9).png" class="w3-round w3-image imagem-com-efeito" style="width:100%">
+      <hr>
+      <img src="image-removebg-preview (10).png" class="w3-round w3-image imagem-com-efeito" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-row w3-padding-64 container" id="contact">
+    <div class="iframe-container w3-round">
+      <iframe src="https://data.footprintnetwork.org/#/??_ga=2.109674693.1145936649.1686411092-908997480.1686411092"></iframe>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center w3-hover-green">Reduce</h1><br>
+      <p class="w3-large text">Sites like this are mainly made for awareness, as that is the main way to propagate the reduce. Our idea is to share the site with the whole school and the local community, so that they can understand the effects of our ecological footprint.<br><br>Sites like the Global Footprint Network inspired our group to undertake this project. No apparent costs, we just need a computer and a good idea in our heads.</p>
+    </div>
+  </div>
+
+  <hr>
+  <div class="w3-row w3-padding-64 container" id="finalthoughts">
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center w3-hover-green">Final Thoughts</h1><br>
+    <p class="w3-large text">After implementing these measures, the group believes that the ecological footprint at school can be significantly reduced. By promoting waste separation, community engagement through gardening, recycling and reusing materials, fostering discussions on sustainability, conserving water resources, and adopting sustainable practices, students will develop a greater sense of environmental responsibility and contribute to a more sustainable future. It is crucial to calculate our environmental footprint using tools like the Ecological Footprint Calculator to understand the impact of our actions and further motivate the need for reduction. Together, we can make a positive difference in the world around us and create a greener and more sustainable school environment.</p>
+  </div>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="image-removebg-preview (11).png" class="w3-round w3-image imagem-com-efeito" alt="Table Setting" width="600" height="750">
+    </div>
+</div>
+
+</html>
